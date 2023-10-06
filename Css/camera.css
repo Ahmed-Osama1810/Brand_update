@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: #e6e6e6;
+}
+.container {
+  display: flex;
+  max-width: 720px;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 12px 12px 0;
+  clip-path: circle(65% at right);
+  background: linear-gradient(135deg, #fd9bb0 10%, #f6416c 100%);
+}
+/* Start Box One */
+.container .box.one {
+  padding: 35px 5px 0 35px;
+}
+.box.one .details .topic {
+  font-size: 30px;
+  font-weight: 500;
+}
+.box.one .details p {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+}
+.box.one .rating {
+  color: rgb(220, 239, 13);
+  margin-top: 5px;
+  font-size: larger;
+}
+.box.one .details .price-box {
+  margin-top: 16px;
+}
+.box.one .button1 button {
+  background: #00e6e6;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px 1px black;
+  transition: all 0.2s ease;
+}
+.box.one .button1 button:active {
+  box-shadow: none;
+  background: #00b9b9;
+}
+/* End Box One */
+.details .price-box .discount {
+  position: relative;
+  font-size: 20px;
+  color: #737373;
+  margin: 10px 0 0 12px;
+}
+.details .price-box .price {
+  color: #fc6989;
+  font-size: 30px;
+}
+/* .details .button1 {
+  margin-top: 55px;
+} */
+/* Start Box Tow */
+.container .box.tow .img {
+  height: 340px;
+  width: 430px;
+}
+.container .box.tow .img-box {
+  position: relative;
+  text-align: right;
+  right: 0;
+  bottom: 35px;
+}
+.box.tow .info {
+  margin: 0 35px 0 0;
+}
+.box.tow .info .brand {
+  font-size: 27px;
+  font-weight: 600;
+  color: #c9032e;
+  font-family: none;
+}
+.box.tow .info .name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.box.tow .info .shipping {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.box.tow .info .button2 {
+  margin: 17px 0;
+}
+.box.tow .info .button2 button {
+  background: transparent;
+  color: #000;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 1px black;
+  transition: all 0.1s ease;
+}
+.box.tow .info .button2 button:active {
+  box-shadow: 0 0.5px 1px 0.5px black;
+}
+.box.tow .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* End Box Tow */
+/* @media (max-width:767px) {
+  .details .button1 {
+    margin-top: 25px;
+  }
+}
+@media (min-width:200px) {
+  .details .button1 {
+    margin-top: 5px;
+  }
+} */
